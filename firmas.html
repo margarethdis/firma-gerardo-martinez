@@ -4,116 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Firmas Corporativas - Gerardo Martinez</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f0f2f5;
-            padding: 50px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        h1 { color: #2c3e50; margin-bottom: 10px; }
-        .instrucciones {
-            background: #d4a373;
-            color: white;
-            padding: 15px;
-            border-radius: 8px;
-            margin-bottom: 40px;
-            max-width: 600px;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        .firma-card {
-            background: white;
-            padding: 25px;
-            margin-bottom: 30px;
-            border-radius: 12px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-            border: 1px solid #e1e1e1;
-            width: 550px;
-        }
-        .label {
-            font-size: 11px;
-            color: #aaa;
-            margin-bottom: 15px;
-            display: block;
-            font-weight: bold;
-            text-transform: uppercase;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles/base.css">
 </head>
 <body>
 
     <h1>Panel de Firmas - Gerardo Martinez</h1>
+    
     <div class="instrucciones">
         <strong>Instrucciones:</strong> Selecciona la firma de abajo con el mouse, cópiala (Ctrl+C) y pégala en tu configuración de correo.
     </div>
 
     <div class="firma-card">
         <span class="label">Firma 1: Gerente (TBS)</span>
-        <table cellpadding="0" cellspacing="0" border="0" style="font-family:Arial, sans-serif; color:#333; width:500px;">
-            <tr>
-                <td width="260" valign="top" style="padding-right:20px; border-right:1px solid #eee;">
-                    <img src="images/tbs.gif" width="120" style="display:block; margin-bottom:15px;" alt="Logo TBS">
-                    <div style="font-size:12px; line-height:1.6; color:#666;">
-                        <span style="color:#d4a373;">📞</span> 504 31884200<br>
-                        <span style="color:#d4a373;">📧</span> <a href="mailto:oscargerardo.tbs@gmail.com" style="color:#666; text-decoration:none;">oscargerardo.tbs@gmail.com</a><br>
-                        <span style="color:#d4a373;">📱</span> @correduriatbs
-                    </div>
-                </td>
-                <td width="200" valign="middle" style="padding-left:20px; text-align:center;">
-                    <img src="images/gera.gif" width="100" height="100" style="display:block; border-radius:50%; margin: 0 auto 10px auto; border: 2px solid #d4a373;">
-                    <div style="font-size:17px; font-weight:bold; color:#2c3e50;">O. Gerardo Martinez</div>
-                    <div style="font-size:13px; color:#d4a373; font-weight:600; text-transform:uppercase;">Gerente</div>
-                </td>
-            </tr>
-        </table>
+        <div class="signature-container">
+            <table cellpadding='0' cellspacing='0' border='0' class="signature-table">
+                <tr>
+                    <td width='120' valign='middle'>
+                        <img src='' width='100' class="profile-img">
+                    </td>
+                    <td class="signature-content" valign='middle'>
+                        <div class="name">O. Gerardo Martinez</div>
+                        <div class="job-title">Gerente</div>
+                        <div class="contact-info">
+                            <a href='tel:504 31884200'>📞 504 31884200</a><br>
+                            <a href='mailto:oscargerardo.tbs@gmail.com'>📧 oscargerardo.tbs@gmail.com</a><br>
+                            <span>📍 </span><br>
+                            <span class="social">📱 @correduriatbs</span>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
     </div>
 
     <div class="firma-card">
         <span class="label">Firma 2: Director (Triple A)</span>
-        <table cellpadding="0" cellspacing="0" border="0" style="font-family:Arial, sans-serif; color:#333; width:500px;">
-            <tr>
-                <td width="260" valign="top" style="padding-right:20px; border-right:1px solid #eee;">
-                    <img src="images/triplea.gif" width="130" style="display:block; margin-bottom:15px;" alt="Logo Triple A">
-                    <div style="font-size:12px; line-height:1.6; color:#666;">
-                        <span style="color:#d4a373;">📞</span> 505 31884200<br>
-                        <span style="color:#d4a373;">📧</span> <a href="mailto:gerardo@tripleahn.com" style="color:#666; text-decoration:none;">gerardo@tripleahn.com</a><br>
-                        <span style="color:#d4a373;">📍</span> Bo. Santa Anita 2 cll. 6ave.<br>
-                        <span style="color:#d4a373;">📱</span> @tripleahn
-                    </div>
-                </td>
-                <td width="200" valign="middle" style="padding-left:20px; text-align:center;">
-                    <img src="images/gera.gif" width="100" height="100" style="display:block; border-radius:50%; margin: 0 auto 10px auto; border: 2px solid #d4a373;">
-                    <div style="font-size:17px; font-weight:bold; color:#2c3e50;">O. Gerardo Martinez</div>
-                    <div style="font-size:13px; color:#d4a373; font-weight:600; text-transform:uppercase;">Director de Marketing</div>
-                </td>
-            </tr>
-        </table>
+        <div class="signature-container">
+            <table cellpadding='0' cellspacing='0' border='0' class="signature-table">
+                <tr>
+                    <td width='120' valign='middle'>
+                        <img src='' width='100' class="profile-img">
+                    </td>
+                    <td class="signature-content" valign='middle'>
+                        <div class="name">O. Gerardo Martinez</div>
+                        <div class="job-title">Director de Marketing</div>
+                        <div class="contact-info">
+                            <a href='tel:505 31884200'>📞 505 31884200</a><br>
+                            <a href='mailto:gerardo@tripleahn.com'>📧 gerardo@tripleahn.com</a><br>
+                            <span>📍 Bo. Santa Anita 2 cll. 6ave. </span><br>
+                            <span class="social">📱 @tripleahn</span>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
     </div>
 
     <div class="firma-card">
         <span class="label">Firma 3: Personal</span>
-        <table cellpadding="0" cellspacing="0" border="0" style="font-family:Arial, sans-serif; color:#333; width:500px;">
-            <tr>
-                <td width="260" valign="top" style="padding-right:20px; border-right:1px solid #eee;">
-                    <img src="images/logo-personal.png" width="100" style="display:block; margin-bottom:15px;" alt="Logo Personal">
-                    <div style="font-size:12px; line-height:1.6; color:#666;">
-                        <span style="color:#d4a373;">📞</span> 506 31884200<br>
-                        <span style="color:#d4a373;">📧</span> <a href="mailto:gerardo@martinezm.net" style="color:#666; text-decoration:none;">gerardo@martinezm.net</a><br>
-                        <span style="color:#d4a373;">📱</span> @oscargerardo
-                    </div>
-                </td>
-                <td width="200" valign="middle" style="padding-left:20px; text-align:center;">
-                    <img src="images/gera.gif" width="100" height="100" style="display:block; border-radius:50%; margin: 0 auto 10px auto; border: 2px solid #d4a373;">
-                    <div style="font-size:17px; font-weight:bold; color:#2c3e50;">O. Gerardo Martinez</div>
-                    <div style="font-size:13px; color:#d4a373; font-weight:600; text-transform:uppercase;">Marketer</div>
-                </td>
-            </tr>
-        </table>
+        <div class="signature-container">
+            <table cellpadding='0' cellspacing='0' border='0' class="signature-table">
+                <tr>
+                    <td width='120' valign='middle'>
+                        <img src='' width='100' class="profile-img">
+                    </td>
+                    <td class="signature-content" valign='middle'>
+                        <div class="name">O. Gerardo Martinez</div>
+                        <div class="job-title">marketer</div>
+                        <div class="contact-info">
+                            <a href='tel:506 31884200'>📞 506 31884200</a><br>
+                            <a href='mailto:gerardo@martinezm.net'>📧 gerardo@martinezm.net</a><br>
+                            <span>📍 </span><br>
+                            <span class="social">📱 @oscargerardo</span>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
     </div>
 
 </body>
