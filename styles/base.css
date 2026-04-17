@@ -1,11 +1,10 @@
-/* Reseteo básico para que el padding no sume ancho */
+/* 1. Reset Global */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* Estilos Generales del Portal */
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
     background-color: #f0f2f5;
@@ -22,6 +21,11 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
 .instrucciones {
     background: #d4a373;
     color: white;
@@ -31,21 +35,25 @@ h1 {
     max-width: 600px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    line-height: 1.4;
 }
 
-/* Tarjeta contenedora de la firma - Ajustada */
+/* 2. Tarjeta Contenedora de Firmas */
 .firma-card {
     background: white;
-    padding: 30px; /* Espacio interno generoso */
-    margin-bottom: 30px;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
-    border: 1px solid #e1e1e1;
-    width: 100%; /* Flexible */
-    max-width: 650px; /* Aumentado ligeramente para dar aire */
+    padding: 25px;
+    margin-bottom: 35px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    border: 1px solid #eef0f2;
+    
+    /* Ancho ideal para que las tablas de 580px respiren */
+    width: 100%;
+    max-width: 640px; 
+    
     display: flex;
     flex-direction: column;
-    overflow: hidden; /* Asegura que nada salga */
+    overflow: hidden; /* Evita que los logos se salgan visualmente */
 }
 
 .label {
@@ -57,12 +65,36 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 1px;
     border-bottom: 1px solid #f1f5f9;
-    padding-bottom: 5px;
+    padding-bottom: 8px;
     width: 100%;
 }
 
-/* Estilo para la foto de perfil redonda en el navegador */
-.profile-img-web {
+/* 3. Estilos para Imágenes (Vista previa en Navegador) */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Forzar que la foto de perfil sea redonda en el panel */
+img[src*="profileg"] {
     border-radius: 50%;
     object-fit: cover;
+    border: 1px solid #f0f0f0;
+}
+
+/* Estilo para los enlaces de la firma */
+a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #d4a373 !important;
+}
+
+/* Separador estético entre estilos */
+hr {
+    width: 100%;
+    max-width: 640px;
 }
