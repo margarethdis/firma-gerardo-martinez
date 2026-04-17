@@ -1,4 +1,11 @@
-/* Estilos Generales */
+/* Reseteo básico para que el padding no sume ancho */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos Generales del Portal */
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
     background-color: #f0f2f5;
@@ -12,6 +19,7 @@ body {
 h1 {
     color: #2c3e50;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .instrucciones {
@@ -25,15 +33,19 @@ h1 {
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* Tarjeta contenedora de la firma */
+/* Tarjeta contenedora de la firma - Ajustada */
 .firma-card {
     background: white;
-    padding: 30px;
+    padding: 30px; /* Espacio interno generoso */
     margin-bottom: 30px;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.06);
     border: 1px solid #e1e1e1;
-    width: 620px; /* Ancho suficiente para que el logo no se salga */
+    width: 100%; /* Flexible */
+    max-width: 650px; /* Aumentado ligeramente para dar aire */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Asegura que nada salga */
 }
 
 .label {
@@ -46,10 +58,11 @@ h1 {
     letter-spacing: 1px;
     border-bottom: 1px solid #f1f5f9;
     padding-bottom: 5px;
+    width: 100%;
 }
 
-/* Ajustes para imágenes de perfil en el navegador */
-.firma-card img[src*="profileg"] {
+/* Estilo para la foto de perfil redonda en el navegador */
+.profile-img-web {
     border-radius: 50%;
     object-fit: cover;
 }
