@@ -1,8 +1,6 @@
-/* =========================================
-   Estilos del Portal de Firmas (Navegador)
-   ========================================= */
+/* Estilos Generales */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
     background-color: #f0f2f5;
     padding: 40px 20px;
     display: flex;
@@ -14,127 +12,44 @@ body {
 h1 {
     color: #2c3e50;
     margin-bottom: 10px;
-    font-weight: 700;
 }
 
 .instrucciones {
-    background: #d4a373; /* Color café/dorado corporativo */
+    background: #d4a373;
     color: white;
     padding: 20px;
-    border-radius: 12px;
+    border-radius: 10px;
     margin-bottom: 40px;
-    max-width: 650px;
+    max-width: 600px;
     text-align: center;
-    box-shadow: 0 4px 15px rgba(212, 163, 115, 0.3);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
+/* Tarjeta contenedora de la firma */
 .firma-card {
     background: white;
     padding: 30px;
-    margin-bottom: 35px;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-    border: 1px solid #eef0f2;
-    /* Ajustamos el ancho para acomodar el nuevo diseño de 3 columnas */
-    width: 650px; 
-    position: relative;
-    transition: transform 0.2s ease;
-}
-
-.firma-card:hover {
-    transform: translateY(-5px);
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    border: 1px solid #e1e1e1;
+    width: 620px; /* Ancho suficiente para que el logo no se salga */
 }
 
 .label {
-    font-size: 12px;
+    font-size: 11px;
     color: #94a3b8;
     margin-bottom: 20px;
     display: block;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 1px;
-    border-bottom: 2px solid #f1f5f9;
-    padding-bottom: 8px;
+    border-bottom: 1px solid #f1f5f9;
+    padding-bottom: 5px;
 }
 
-/* =========================================
-   Estilos de la Firma (Para copiar al correo)
-   Estos estilos usan atributos inline en el HTML
-   para máxima compatibilidad, pero definimos clases
-   aquí para visualización en el portal.
-   ========================================= */
-
-/* Tabla principal de la firma */
-.signature-table {
-    font-family: Arial, sans-serif;
-    color: #333;
-    /* Ancho total de la firma en el correo */
-    width: 600px; 
-}
-
-/* Columna 1: Foto de Perfil */
-.td-profile {
-    width: 90px;
-    vertical-align: middle;
-    padding-right: 15px;
-}
-
-.profile-img {
-    display: block;
-    border-radius: 50%; /* Foto redonda */
+/* Ajustes para imágenes de perfil en el navegador */
+.firma-card img[src*="profileg"] {
+    border-radius: 50%;
     object-fit: cover;
-    border: 2px solid #f0f2f5;
-}
-
-/* Columna 2: Información (Centro) */
-.td-info {
-    vertical-align: middle;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-left: 2px solid #d4a373; /* Línea divisoria café */
-}
-
-.name {
-    font-size: 18px;
-    font-weight: bold;
-    color: #2c3e50;
-    margin-bottom: 2px;
-}
-
-.job-title {
-    font-size: 14px;
-    color: #d4a373;
-    font-weight: 600;
-    margin-bottom: 8px;
-}
-
-.contact-info {
-    font-size: 12px;
-    line-height: 1.5;
-    color: #666;
-}
-
-.contact-info a {
-    color: #666;
-    text-decoration: none;
-}
-
-.social-handle {
-    color: #d4a373;
-    font-weight: bold;
-}
-
-/* Columna 3: Logo (Derecha) */
-.td-logo {
-    width: 100px;
-    vertical-align: middle;
-    padding-left: 15px;
-    text-align: right; /* Alinear logo a la derecha */
-}
-
-.logo-img {
-    display: inline-block;
-    max-width: 100px;
-    height: auto;
-    /* border-radius: 8px; /* Opcional: esquinas redondeadas para el logo */
 }
