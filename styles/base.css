@@ -14,75 +14,75 @@ body {
     align-items: center;
 }
 
-/* 2. Tarjeta Contenedora */
+/* 2. Tarjetas Estándar */
 .firma-card {
     background: white;
-    padding: 25px; /* Espacio interno de la tarjeta */
+    padding: 25px;
     margin-bottom: 30px;
     border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
     border: 1px solid #eef0f2;
     width: 100%;
-    max-width: 620px;
-    overflow: hidden;
+    max-width: 600px;
+    transition: all 0.4s ease;
 }
 
-/* 3. Ajuste de la Tabla y Movimiento de Logos */
-.firma-card table {
+.firma-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+}
+
+/* 3. TARJETAS MINIMAL PREMIUM (Efecto Desplegar) */
+.card-minimal {
+    background: #ffffff;
+    border: 2px solid #f1f5f9;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card-minimal:hover {
+    border-color: #d4a373;
+    background: #fffcf9;
+    transform: scale(1.02);
+}
+
+/* Animación del Logo en Minimal (Revelado suave) */
+.logo-desplegable {
+    max-width: 70px !important;
+    margin: 0 auto;
+    opacity: 0;
+    max-height: 0; /* Empieza colapsado */
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+}
+
+.card-minimal:hover .logo-desplegable {
+    opacity: 1;
+    max-height: 100px; /* Se despliega */
+    transform: translateY(0);
+    margin-top: 20px;
+}
+
+/* 4. Tablas y Estructura */
+.firma-tabla {
     width: 100% !important;
-    max-width: 100% !important;
+    max-width: 540px !important;
+    margin: 0 auto;
     border-collapse: collapse;
 }
 
-/* ESTO MUEVE LOS LOGOS HACIA ADENTRO */
+.celda-perfil { padding: 0 10px; width: 85px; }
+.celda-logo { padding-right: 15px; width: 110px; }
+.celda-info { padding: 0 15px; border-left: 2px solid #d4a373; }
+.celda-info-inv { padding: 0 15px; border-left: 2px solid #d4a373; border-right: 2px solid #d4a373; }
 
-/* Firma Clásica: Empuja la Foto (Izquierda) hacia la derecha */
-.firma-card td[width="90"] {
-    padding-left: 15px !important; 
-}
+/* 5. Imágenes y Textos */
+.img-perfil { width: 75px !important; height: 75px !important; border-radius: 50%; object-fit: cover; display: block; }
+.img-logo { max-width: 90px !important; height: auto; display: block; }
+.nombre { font-size: 19px; font-weight: bold; color: #2c3e50; }
+.cargo { font-size: 14px; color: #d4a373; font-weight: 600; margin-bottom: 8px; }
+.datos { font-size: 12.5px; line-height: 1.6; color: #666; }
+.label { font-size: 10px; color: #94a3b8; font-weight: 800; text-transform: uppercase; margin-bottom: 15px; display: block; }
 
-/* Firma Clásica: Empuja el Logo (Derecha) hacia la izquierda */
-.firma-card td[align="right"] {
-    padding-right: 15px !important; 
-}
-
-/* Firma Invertida: Empuja el Logo (Izquierda) hacia la derecha */
-.firma-card td[align="left"] {
-    padding-left: 15px !important; 
-}
-
-/* 4. Control de Imágenes */
-img {
-    display: block;
-    height: auto;
-}
-
-/* Foto de Perfil */
-img[src*="profileg"] {
-    width: 70px !important;
-    height: 70px !important;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-/* Logos de Empresa */
-img[src*="logo"], img[src*="triplea"] {
-    max-width: 85px !important;
-}
-
-/* 5. Estética de Texto */
-.label {
-    font-size: 10px;
-    color: #94a3b8;
-    margin-bottom: 15px;
-    display: block;
-    font-weight: 800;
-    text-transform: uppercase;
-    border-bottom: 1px solid #f1f5f9;
-    padding-bottom: 8px;
-}
-
-a {
-    text-decoration: none;
-    color: #666;
-}
+.celda-minimalista { text-align: center; padding: 20px 0; }
+.linea-decorativa { width: 40px; height: 2px; background: #d4a373; margin: 10px auto; }
