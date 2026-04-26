@@ -2,35 +2,167 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Panel de Firmas - Gerardo Martinez</title>
+    <title>Panel de Firmas - Margareth Ramos</title>
     <link rel="stylesheet" href="styles/base.css">
 </head>
 <body>
 
-    <h1 style="color: #2c3e50; margin-bottom: 10px;">Panel de Firmas Corporativas</h1>
-    <p style="color: #718096; margin-bottom: 30px;">Selecciona el estilo que mejor se adapte a tu comunicación del día.</p>
+    <h1>Panel de Firmas Profesionales</h1>
+    <div style="background: #d4a373; color: white; padding: 10px 20px; border-radius: 8px; margin-bottom: 30px;">
+        Copia y pega la firma que desees en tu configuración de correo.
+    </div>
 
-    <h2 style="color: #2c3e50; margin-top: 50px; margin-bottom: 25px; border-bottom: 2px solid #d4a373; display: inline-block;">Estilo Executive Glass</h2>
+    <h2 style="color: #d4a373;">1. Estilo Clásico (Foto Izquierda)</h2>
+    <div class="firma-card">
+        <span class="label">Firma 1: TBS</span>
+        <table class="firma-tabla">
+            <tr>
+                <td width="85"><img src="images/profileg.gif" class="img-perfil"></td>
+                <td class="celda-info">
+                    <div class="nombre">O. Gerardo Martinez</div>
+                    <div class="cargo">Gerente</div>
+                    <div class="datos">📞 504 31884200<br>📧 oscargerardo.tbs@gmail.com</div>
+                </td>
+                <td width="100" align="right"><img src="images/tbslogo.gif" class="img-logo"></td>
+            </tr>
+        </table>
+    </div>
 
+    <div class="firma-card">
+        <span class="label">Firma 2: Triple A</span>
+        <table class="firma-tabla">
+            <tr>
+                <td width="85"><img src="images/profileg.gif" class="img-perfil"></td>
+                <td class="celda-info">
+                    <div class="nombre">O. Gerardo Martinez</div>
+                    <div class="cargo">Director de Marketing</div>
+                    <div class="datos">📞 504 31884200<br>📧 gerardo@tripleahn.com</div>
+                </td>
+                <td width="100" align="right"><img src="images/triplealogo.gif" class="img-logo"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="firma-card">
+        <span class="label">Firma 3: Personal (Sin Logo)</span>
+        <table class="firma-tabla">
+            <tr>
+                <td width="85"><img src="images/profileg.gif" class="img-perfil"></td>
+                <td class="celda-info" style="border-right: none;">
+                    <div class="nombre">O. Gerardo Martinez</div>
+                    <div class="cargo">Marketer</div>
+                    <div class="datos">📞 504 31884200<br>📧 gerardo@martinezm.net</div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <h2 style="color: #d4a373; margin-top: 40px;">2. Estilo Moderno (Invertido)</h2>
+    <div class="firma-card">
+        <span class="label">Firma 4: TBS Modern</span>
+        <table class="firma-tabla">
+            <tr>
+                <td width="100"><img src="images/tbslogo.gif" class="img-logo"></td>
+                <td class="celda-info-inv" align="right">
+                    <div class="nombre">O. Gerardo Martinez</div>
+                    <div class="cargo">Gerente</div>
+                    <div class="datos">504 31884200 📞<br>oscargerardo.tbs@gmail.com 📧</div>
+                </td>
+                <td width="85" align="right"><img src="images/profileg.gif" class="img-perfil"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="firma-card">
+        <span class="label">Firma 5: Triple A Modern</span>
+        <table class="firma-tabla">
+            <tr>
+                <td width="100"><img src="images/triplealogo.gif" class="img-logo"></td>
+                <td class="celda-info-inv" align="right">
+                    <div class="nombre">O. Gerardo Martinez</div>
+                    <div class="cargo">Director de Marketing</div>
+                    <div class="datos">504 31884200 📞<br>gerardo@tripleahn.com 📧</div>
+                </td>
+                <td width="85" align="right"><img src="images/profileg.gif" class="img-perfil"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="firma-card">
+        <span class="label">Firma 6: Personal Modern</span>
+        <table class="firma-tabla">
+            <tr>
+                <td width="40"></td>
+                <td class="celda-info" style="border-left: none; border-right: 2px solid #d4a373; padding-right: 15px;" align="right">
+                    <div class="nombre">O. Gerardo Martinez</div>
+                    <div class="cargo">Marketer</div>
+                    <div class="datos">504 31884200 📞<br>gerardo@martinezm.net 📧</div>
+                </td>
+                <td width="85" align="right"><img src="images/profileg.gif" class="img-perfil"></td>
+            </tr>
+        </table>
+    </div>
+
+    <h2 style="color: #d4a373; margin-top: 40px;">3. Estilo Minimal Premium (Desplegable)</h2>
+    <div class="firma-card card-minimal">
+        <span class="label">Firma 7: TBS Minimal</span>
+        <table class="firma-tabla">
+            <tr>
+                <td class="celda-minimalista">
+                    <img src="images/profileg.gif" class="img-perfil" style="margin: 0 auto;">
+                    <div class="nombre">O. Gerardo Martinez</div>
+                    <div class="cargo">Gerente TBS</div>
+                    <div class="linea-decorativa"></div>
+                    <div class="datos">504 31884200 | oscargerardo.tbs@gmail.com</div>
+                    <img src="images/tbslogo.gif" class="logo-desplegable">
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="firma-card card-minimal">
+        <span class="label">Firma 8: Triple A Minimal</span>
+        <table class="firma-tabla">
+            <tr>
+                <td class="celda-minimalista">
+                    <img src="images/profileg.gif" class="img-perfil" style="margin: 0 auto;">
+                    <div class="nombre">O. Gerardo Martinez</div>
+                    <div class="cargo">Marketing Director</div>
+                    <div class="linea-decorativa"></div>
+                    <div class="datos">504 31884200 | gerardo@tripleahn.com</div>
+                    <img src="images/triplealogo.gif" class="logo-desplegable">
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="firma-card card-minimal">
+        <span class="label">Firma 9: Personal Minimal</span>
+        <table class="firma-tabla">
+            <tr>
+                <td class="celda-minimalista">
+                    <img src="images/profileg.gif" class="img-perfil" style="margin: 0 auto; border: 2px solid #2c3e50;">
+                    <div class="nombre">O. Gerardo Martinez</div>
+                    <div class="cargo">Digital Marketer</div>
+                    <div class="linea-decorativa" style="background: #2c3e50;"></div>
+                    <div class="datos">504 31884200 | @oscargerardo</div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <h2 style="color: #d4a373; margin-top: 40px;">4. Estilo Executive Glass (Máximo Nivel)</h2>
     <div class="firma-card card-executive">
         <span class="label">Firma 10: TBS Executive</span>
         <table class="firma-tabla">
             <tr>
-                <td width="90" valign="top">
-                    <img src="images/profileg.gif" class="img-perfil">
-                </td>
+                <td width="90"><img src="images/profileg.gif" class="img-perfil-sq"></td>
                 <td style="padding-left: 20px;">
                     <div class="nombre">O. Gerardo Martinez</div>
                     <div class="cargo">Gerente General</div>
-                    <div class="separador-ejecutivo"></div>
-                    <div class="datos">
-                        <strong>T:</strong> 504 31884200 | <strong>E:</strong> oscargerardo.tbs@gmail.com<br>
-                        <em>TBS Correduría de Seguros</em>
-                    </div>
+                    <div class="datos"><b>T:</b> 504 31884200<br><b>E:</b> oscargerardo.tbs@gmail.com</div>
                 </td>
-                <td width="100" align="right" valign="middle">
-                    <img src="images/tbslogo.gif" class="img-logo" style="opacity: 0.8;">
-                </td>
+                <td width="100" align="right"><img src="images/tbslogo.gif" class="img-logo"></td>
             </tr>
         </table>
     </div>
@@ -39,21 +171,13 @@
         <span class="label">Firma 11: Triple A Executive</span>
         <table class="firma-tabla">
             <tr>
-                <td width="90" valign="top">
-                    <img src="images/profileg.gif" class="img-perfil">
-                </td>
+                <td width="90"><img src="images/profileg.gif" class="img-perfil-sq"></td>
                 <td style="padding-left: 20px;">
                     <div class="nombre">O. Gerardo Martinez</div>
                     <div class="cargo">Marketing Director</div>
-                    <div class="separador-ejecutivo"></div>
-                    <div class="datos">
-                        <strong>T:</strong> 504 31884200 | <strong>E:</strong> gerardo@tripleahn.com<br>
-                        <strong>Triple A Marketing</strong>
-                    </div>
+                    <div class="datos"><b>T:</b> 504 31884200<br><b>E:</b> gerardo@tripleahn.com</div>
                 </td>
-                <td width="100" align="right" valign="middle">
-                    <img src="images/triplealogo.gif" class="img-logo" style="opacity: 0.8;">
-                </td>
+                <td width="100" align="right"><img src="images/triplealogo.gif" class="img-logo"></td>
             </tr>
         </table>
     </div>
@@ -62,20 +186,13 @@
         <span class="label">Firma 12: Personal Executive</span>
         <table class="firma-tabla">
             <tr>
-                <td width="90" valign="top">
-                    <img src="images/profileg.gif" class="img-perfil" style="filter: grayscale(100%);">
-                </td>
+                <td width="90"><img src="images/profileg.gif" class="img-perfil-sq" style="filter: grayscale(100%);"></td>
                 <td style="padding-left: 20px;">
                     <div class="nombre">O. Gerardo Martinez</div>
-                    <div class="cargo">Digital Consultant</div>
-                    <div class="separador-ejecutivo"></div>
-                    <div class="datos">
-                        <strong>M:</strong> 504 31884200 | <strong>W:</strong> gerardo@martinezm.net<br>
-                        <em>Honduras | Global Remote</em>
-                    </div>
+                    <div class="cargo">Consultant</div>
+                    <div class="datos"><b>M:</b> 504 31884200<br><b>W:</b> gerardo@martinezm.net</div>
                 </td>
-                <td width="100" align="right">
-                    </td>
+                <td width="100" align="right"></td>
             </tr>
         </table>
     </div>
