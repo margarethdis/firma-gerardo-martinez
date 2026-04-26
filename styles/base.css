@@ -1,4 +1,4 @@
-/* 1. Reset Global */
+/* 1. Reset y Base */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -12,89 +12,77 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #333;
 }
 
-h1 {
-    color: #2c3e50;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-h2 {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-.instrucciones {
-    background: #d4a373;
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 40px;
-    max-width: 600px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    line-height: 1.4;
-}
-
-/* 2. Tarjeta Contenedora de Firmas */
+/* 2. Tarjeta Contenedora */
 .firma-card {
     background: white;
-    padding: 25px;
-    margin-bottom: 35px;
+    padding: 25px; /* Espacio interno de la tarjeta */
+    margin-bottom: 30px;
     border-radius: 15px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.05);
     border: 1px solid #eef0f2;
-    
-    /* Ancho ideal para que las tablas de 580px respiren */
     width: 100%;
-    max-width: 640px; 
-    
-    display: flex;
-    flex-direction: column;
-    overflow: hidden; /* Evita que los logos se salgan visualmente */
+    max-width: 620px;
+    overflow: hidden;
 }
 
-.label {
-    font-size: 11px;
-    color: #94a3b8;
-    margin-bottom: 20px;
-    display: block;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    border-bottom: 1px solid #f1f5f9;
-    padding-bottom: 8px;
-    width: 100%;
+/* 3. Ajuste de la Tabla y Movimiento de Logos */
+.firma-card table {
+    width: 100% !important;
+    max-width: 100% !important;
+    border-collapse: collapse;
 }
 
-/* 3. Estilos para Imágenes (Vista previa en Navegador) */
+/* ESTO MUEVE LOS LOGOS HACIA ADENTRO */
+
+/* Firma Clásica: Empuja la Foto (Izquierda) hacia la derecha */
+.firma-card td[width="90"] {
+    padding-left: 15px !important; 
+}
+
+/* Firma Clásica: Empuja el Logo (Derecha) hacia la izquierda */
+.firma-card td[align="right"] {
+    padding-right: 15px !important; 
+}
+
+/* Firma Invertida: Empuja el Logo (Izquierda) hacia la derecha */
+.firma-card td[align="left"] {
+    padding-left: 15px !important; 
+}
+
+/* 4. Control de Imágenes */
 img {
-    max-width: 100%;
+    display: block;
     height: auto;
 }
 
-/* Forzar que la foto de perfil sea redonda en el panel */
+/* Foto de Perfil */
 img[src*="profileg"] {
+    width: 70px !important;
+    height: 70px !important;
     border-radius: 50%;
     object-fit: cover;
-    border: 1px solid #f0f0f0;
 }
 
-/* Estilo para los enlaces de la firma */
+/* Logos de Empresa */
+img[src*="logo"], img[src*="triplea"] {
+    max-width: 85px !important;
+}
+
+/* 5. Estética de Texto */
+.label {
+    font-size: 10px;
+    color: #94a3b8;
+    margin-bottom: 15px;
+    display: block;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-bottom: 1px solid #f1f5f9;
+    padding-bottom: 8px;
+}
+
 a {
-    color: #666;
     text-decoration: none;
-    transition: color 0.2s;
-}
-
-a:hover {
-    color: #d4a373 !important;
-}
-
-/* Separador estético entre estilos */
-hr {
-    width: 100%;
-    max-width: 640px;
+    color: #666;
 }
