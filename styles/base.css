@@ -14,7 +14,7 @@ body {
     align-items: center;
 }
 
-/* 2. Tarjetas Estándar */
+/* 2. Tarjetas Generales */
 .firma-card {
     background: white;
     padding: 25px;
@@ -24,6 +24,7 @@ body {
     width: 100%;
     max-width: 600px;
     transition: all 0.4s ease;
+    cursor: pointer;
 }
 
 .firma-card:hover {
@@ -31,58 +32,51 @@ body {
     box-shadow: 0 15px 30px rgba(0,0,0,0.08);
 }
 
-/* 3. TARJETAS MINIMAL PREMIUM (Efecto Desplegar) */
-.card-minimal {
+/* 3. ESTILO 4: EXECUTIVE GLASS (Nuevo) */
+.card-executive {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border-left: 5px solid #2c3e50; /* Barra lateral de autoridad */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+.card-executive:hover {
+    border-left-color: #d4a373;
     background: #ffffff;
-    border: 2px solid #f1f5f9;
+}
+
+.separador-ejecutivo {
+    border-top: 1px solid #eee;
+    margin: 10px 0;
+    width: 100%;
+}
+
+/* 4. Animación Minimal Premium */
+.card-minimal {
     overflow: hidden;
-    position: relative;
     transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.card-minimal:hover {
-    border-color: #d4a373;
-    background: #fffcf9;
-    transform: scale(1.02);
-}
-
-/* Animación del Logo en Minimal (Revelado suave) */
 .logo-desplegable {
     max-width: 70px !important;
     margin: 0 auto;
     opacity: 0;
-    max-height: 0; /* Empieza colapsado */
+    max-height: 0;
     transform: translateY(20px);
     transition: all 0.6s ease;
 }
 
 .card-minimal:hover .logo-desplegable {
     opacity: 1;
-    max-height: 100px; /* Se despliega */
+    max-height: 100px;
     transform: translateY(0);
     margin-top: 20px;
 }
 
-/* 4. Tablas y Estructura */
-.firma-tabla {
-    width: 100% !important;
-    max-width: 540px !important;
-    margin: 0 auto;
-    border-collapse: collapse;
-}
-
-.celda-perfil { padding: 0 10px; width: 85px; }
-.celda-logo { padding-right: 15px; width: 110px; }
-.celda-info { padding: 0 15px; border-left: 2px solid #d4a373; }
-.celda-info-inv { padding: 0 15px; border-left: 2px solid #d4a373; border-right: 2px solid #d4a373; }
-
-/* 5. Imágenes y Textos */
-.img-perfil { width: 75px !important; height: 75px !important; border-radius: 50%; object-fit: cover; display: block; }
-.img-logo { max-width: 90px !important; height: auto; display: block; }
-.nombre { font-size: 19px; font-weight: bold; color: #2c3e50; }
-.cargo { font-size: 14px; color: #d4a373; font-weight: 600; margin-bottom: 8px; }
-.datos { font-size: 12.5px; line-height: 1.6; color: #666; }
-.label { font-size: 10px; color: #94a3b8; font-weight: 800; text-transform: uppercase; margin-bottom: 15px; display: block; }
-
-.celda-minimalista { text-align: center; padding: 20px 0; }
-.linea-decorativa { width: 40px; height: 2px; background: #d4a373; margin: 10px auto; }
+/* 5. Tablas e Imágenes */
+.firma-tabla { width: 100%; max-width: 540px; margin: 0 auto; border-collapse: collapse; }
+.img-perfil { width: 75px !important; height: 75px !important; border-radius: 10px; object-fit: cover; }
+.img-logo { max-width: 80px !important; height: auto; }
+.nombre { font-size: 20px; font-weight: 800; color: #1a202c; letter-spacing: -0.5px; }
+.cargo { font-size: 13px; color: #d4a373; font-weight: 700; text-transform: uppercase; margin-bottom: 5px; }
+.datos { font-size: 12px; color: #4a5568; line-height: 1.6; }
+.label { font-size: 9px; color: #a0aec0; font-weight: 800; text-transform: uppercase; margin-bottom: 12px; display: block; }
